@@ -50,7 +50,7 @@ Extract it into your project directory.
   101,John Doe,CSE,5
   102,Jane Smith,IT,3
 
-## Run Python face.py to start application
+### Run Python face.py to start application
 
 From the GUI:
 
@@ -58,7 +58,7 @@ From the GUI:
 - Start Attendance: Begins webcam session.
 - Stop Session: Ends attendance logging.
 
-## Attendance is saved in attendance/ as:
+### Attendance is saved in attendance/ as:
 
 Roll,Name,Branch,Sem,Timestamp,Status
 101,John Doe,CSE,5,09:30:15,Present
