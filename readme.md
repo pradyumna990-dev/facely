@@ -16,16 +16,6 @@ It uses a webcam to detect and recognize registered faces in real time, logs att
 
 ---
 
-## Project Structure
-
-├── encode_faces.py # Script to register faces from images
-├── face.py # Main attendance system with GUI
-├── images/ # Student images (named as Roll.jpg)
-├── students.csv # Student details (Roll, Name, Branch, Sem)
-├── encodings.dat # Saved face encodings
-├── attendance/ # Attendance CSV logs
-└── shape_predictor_68_face_landmarks.dat # dlib facial landmark model
-
 ---
 
 ## Installation
@@ -48,3 +38,44 @@ run above script on your terminal
 Download shape_predictor_68_face_landmarks.dat from:
 http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 Extract it into your project directory.
+
+## Uses
+
+1. Prepare Student data
+
+- Create a folder named images/
+- Add student images named as Roll.jpg (e.g., 101.jpg)
+- Create students.csv with columns:
+  Roll,Name,Branch,Sem
+  101,John Doe,CSE,5
+  102,Jane Smith,IT,3
+
+## Run Python face.py to start application
+
+From the GUI:
+
+- Register Faces: Runs face encoding
+- Start Attendance: Begins webcam session.
+- Stop Session: Ends attendance logging.
+
+## Attendance is saved in attendance/ as:
+
+Roll,Name,Branch,Sem,Timestamp,Status
+101,John Doe,CSE,5,09:30:15,Present
+
+## Requirements
+
+- Python 3.7+
+- Webcam
+- dlib shape predictor model
+- Required Python packages (see Installation)
+
+## Notes
+
+- Ensure good lighting and frontal face view for better accuracy.
+- Blink detection requires visible eyes.
+- The system assumes one face per student image in images/ folder.
+
+## License
+
+This project is open-source. You can modify and distribute it under your own terms.
