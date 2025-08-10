@@ -27,13 +27,13 @@ git https://github.com/pradyumna990-dev/facely.git
 cd facely
 ```
 
-### Install dependencis
+### 2. Install dependencis
 
 pip install face_recognition opencv-python pandas numpy dlib Pillow scipy
 
 run above script on your terminal
 
-### Download Shape Predictor
+### 3. Download Shape Predictor
 
 Download shape_predictor_68_face_landmarks.dat from:
 http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
